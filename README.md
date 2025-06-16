@@ -17,7 +17,18 @@ El archivo `ARIMA_GARCH_Expanding_Window.R` está basado en el proyecto universi
   Código en **Python**, ejecutado en **Google Colab**, que aplica validación cruzada para series temporales utilizando una **Red Neuronal Recurrente (RNN)** con **celdas LSTM**.
 
 - **`Evaluation_Metrics.R`**  
-  Script en **R** para la evaluación de métricas obtenidas con los modelos anteriores. Contiene los pasos, figuras y tablas presentados en el trabajo.
+  Script en **R** para la evaluación de métricas obtenidas con los modelos anteriores. Contiene los pasos, figuras y tablas presentadas en el trabajo.
 
 - **`Modelo_Final.R`**  
   Código en **R** que realiza un análisis más exhaustivo del modelo seleccionado como más eficaz, incluyendo una evaluación detallada y visualizaciones. Ejecutado en **RStudio**.
+
+## Recomendaciones para ejecutar los scripts en R
+
+Se recomienda instalar y utilizar la librería [`pacman`](https://cran.r-project.org/web/packages/pacman/index.html), que facilita la carga e instalación de paquetes necesarios mediante la función `pacman::p_load()`.
+
+```r
+# Instalar pacman si no está instalado
+if (!require("pacman")) install.packages("pacman")
+
+# Cargar e instalar automáticamente los paquetes necesarios
+pacman::p_load(nombre_paquete1, nombre_paquete2, ...)
